@@ -1,0 +1,396 @@
+
+/* Global */
+.mr-3 {
+    margin-right: 10px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+  }
+  
+  * {
+    -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    background: var(--p--bg);
+  }
+  
+  .ScrollHome {
+    height: 100vh !important;
+    overflow-y: scroll !important;
+    background: linear-gradient(180deg, rgba(205, 252, 81, 0) 0%, #cdfc51 130%);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  .containerE {
+    width: 1180px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .container {
+      width: 1180px;
+      /* max-height: 100vh !important; */
+    }
+    .containerE {
+      width: 1180px;
+    }
+  }
+  
+  :root {
+    --p--general: #cdfc51;
+    --p--white: #fff;
+    --p--dark: #000000;
+    --p--bg: #f5f5f5;
+    --p--tran1: 0.2s ease-in-out;
+    --p--font1: Arial, Helvetica, sans-serif;
+    --p--font2: "Noto Sans", sans-serif;
+  }
+  
+  
+
+  /* =====NEW CSS===== */
+  form.login__form.process__form {
+    max-width: 360px;
+    margin: auto;
+    text-align: start;
+    position: relative;
+    /* height: 80vh; */
+  }
+  
+  form.login__form.process__form label {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 12px;
+  }
+  
+  form.login__form.process__form input.processInput {
+    font-size: 16px;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #37373770;
+    width: 100%;
+  }
+  .feedback__pill a {
+    border: 1px solid #373737 !important;
+  }
+  
+  button{
+    outline: none;
+    border: none;
+  }
+
+  button.signUp_btn {
+    width: 100%;
+    margin: auto;
+    background: #000;
+    color: #fff;
+    padding: 12px;
+    border-radius: 50px;
+    /* position: absolute;
+    bottom: 50px; */
+  }
+
+  form.login__form.process__form.procecss_pg_form {
+    height: 80vh;
+}
+
+form.signup__btn_final {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+  
+  .process__btn{
+    position: absolute;
+    bottom: 50px;
+  }
+  
+  button.signUp_btn.signUp_btn_req{
+    max-width: 328px !important ;
+  }
+  
+  @media screen and (max-width: 375px) {
+    button.signUp_btn.signUp_btn_req{
+      max-width: 100%  !important ;
+    }
+  }
+  
+  form.login__form.process__form.upload__form p.request__p {
+    font-size: 12px;
+    text-align: end;
+    padding-right: 32px;
+  }
+  
+  form.login__form.bOneTwo__from button:first-child {
+    width: 27%;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  
+
+  
+  /* =====Request Process css start here===== */
+  form.process__form, #request__process{
+    text-align: unset;
+  }
+  
+  form.process__form label, .feedback p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .feedback p{
+    margin: 40px 0 20px;
+  }
+  
+  .feedback__pill a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--p--border);
+    display: inline-block;
+    border: 1px solid  var(--p--border);
+    padding: 4px 14px;
+    margin-bottom: 9px;
+    border-radius: 20px;
+  }
+  
+  .feedback__pill a:first-child {
+    margin-right: 10px;
+  }
+  
+  .request__content .title h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .request__content .title {
+    margin-bottom: 40px;
+  }
+  
+  .request__content .content h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .request__content .content {
+    margin-bottom: 20px;
+  }
+  
+  .request__content .content:nth-child(3){
+    margin-bottom: 60px;
+  }
+  
+  
+  .upload__form [type="file"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+  }
+  
+  [type="file"] + label {
+    background: #e3e3e3;
+    border: none;
+    border: 1px dashed #AAAAAA;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 520px;
+    max-width: 328px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  
+  .wrapper textarea#question {
+    outline: none;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #AAAAAA;
+    width: 328px;
+    height: 140px;
+  }
+  
+  form.login__form.process__form.upload__form label {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form.login__form.process__form.upload__form label p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #007AFF;
+  }
+  
+  @media screen and (max-width: 767px) {
+    form.login__form.next__button{
+        margin: auto !important;
+    }
+
+    .select__file {
+      margin-bottom: 40px;
+  }
+  }
+  
+  @media screen and (max-width: 424px) {
+  
+    .wrapper textarea#question{
+        width: 100%;
+    }
+  }
+  
+  .play__payment {
+    height: 520px;
+    max-width: 328px;
+    margin: auto;
+  }
+  
+  .play__payment img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .request__content.payment__content .content:nth-child(3) {
+    margin-bottom: 20px;
+  }
+  
+  
+  /* =====Request Process css end here===== */
+  
+  /* B12 */
+  .B12__finance {
+    max-width: 328px;
+    margin: auto;
+  }
+  
+  .B12__finance .finance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color:  var(--p--border);
+  }
+  
+  .B12__finance h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .second__step .payment__way {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .request__content.payment__content {
+        margin-top: 40px;
+    }
+  }
+  
+  .second__step .payment__way a {
+    width: 103px;
+    padding: 14px 0;
+    text-align: center;
+    border: 1px solid  #373737;
+    margin-bottom: 8px;
+    color:  #373737 ;
+    opacity: 0.4;
+  }
+  
+  .second__step .payment__way a:hover{
+    opacity: 1;
+  }
+  
+  .second__step {
+    margin: 60px 0;
+  }
+  
+  .third__step p {
+    font-size: 14px;
+  }
+  
+  form.login__form.bOneTwo__from {
+    margin-top: 99px;
+  }
+  
+  
+  
+  @media screen and (max-width: 375px) {
+    .second__step .payment__way{
+        justify-content: space-evenly;
+    }
+  }
+  
+  /* B12 */
+  
+  
+  /* B1 */
+  .B1__main {
+    max-width: 328px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    height: 80vh;
+  }
+  
+  .B1__main h4 {
+    margin: 24px 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .B1__main p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  /* B1 */
+  
+  
+  
+  
+  
+  

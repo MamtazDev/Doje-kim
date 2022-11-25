@@ -1,0 +1,11 @@
+.style1 {
+  min-height: 60px;
+  position: sticky;
+  /* width: 100%; */
+  top: 40px;
+  z-index: 1;
+}
+
+.style2 {
+  width: 100%;
+}
