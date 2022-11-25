@@ -44,7 +44,7 @@ const Faq = () => {
               adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet,
               consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor
               sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem
-              ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              ipsum dolor sit amet, consectetur adipisicing elit sed do
               eiusmod.
             </div>
           </div>
