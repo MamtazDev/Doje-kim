@@ -1,10 +1,7 @@
 import React from "react";
-
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import girl from "../../assets/section/highlight1.png";
 
 const settings = {
@@ -101,15 +98,13 @@ const Gallary = () => {
             <div key={index} className="col-lg-2 ">
               <div class="card mx-2  border-0 text-bg-dark">
                 <img src={pic.picture} class="card-img" alt="..." />
-                <div  class="d-flex flex-column justify-content-end card-img-overlay ">
-                <div className="d-flex flex-column justify-content-end">
-               
-                 <div>
-                 <h5 class="card-title fw-bolder pt-2">{pic.name}</h5>
-                  <p class="card-text fw-bolder">{pic.likes}</p>
-                 </div>
-                </div>
-                 
+                <div class="d-flex flex-column justify-content-end card-img-overlay ">
+                  <div className="d-flex flex-column justify-content-end">
+                    <div>
+                      <h5 class="card-title fw-bolder pt-2">{pic.name}</h5>
+                      <p class="card-text fw-bolder">{pic.likes}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
