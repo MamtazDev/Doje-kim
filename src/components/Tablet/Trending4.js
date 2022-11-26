@@ -10,10 +10,57 @@ import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
 
 const Trending4 = () => {
-    const navigate = useNavigate();
-    const navigateToExpert = () => {
-      navigate("/expart");
-    };
+  const navigate = useNavigate();
+  const navigateToExpert = () => {
+    navigate("/expart");
+  };
+  const trending = [
+    {
+      picture: class4,
+      btn: "ORIGINAL SOUND",
+      title: "  SONGHEE'S",
+      titleSpan: "MUSIC CLASS",
+      title2: "SONGHEE",
+      content1: "Lorem ipsum dolor sit amet, consectetur...",
+      content2: "Lorem ipsum dolor sit amet...",
+    },
+    {
+      picture: class5,
+      btn: "ORIGINAL SOUND",
+      title: "  SONGHEE'S",
+      titleSpan: "MUSIC CLASS",
+      title2: "SONGHEE",
+      content1: "Lorem ipsum dolor sit amet, consectetur...",
+      content2: "Lorem ipsum dolor sit amet...",
+    },
+    {
+      picture: class6,
+      btn: "ORIGINAL SOUND",
+      title: "  SONGHEE'S",
+      titleSpan: "MUSIC CLASS",
+      title2: "SONGHEE",
+      content1: "Lorem ipsum dolor sit amet, consectetur...",
+      content2: "Lorem ipsum dolor sit amet...",
+    },
+    {
+      picture: class7,
+      btn: "ORIGINAL SOUND",
+      title: "  SONGHEE'S",
+      titleSpan: "MUSIC CLASS",
+      title2: "SONGHEE",
+      content1: "Lorem ipsum dolor sit amet, consectetur...",
+      content2: "Lorem ipsum dolor sit amet...",
+    },
+    {
+      picture: class3,
+      btn: "ORIGINAL SOUND",
+      title: "  SONGHEE'S",
+      titleSpan: "MUSIC CLASS",
+      title2: "SONGHEE",
+      content1: "Lorem ipsum dolor sit amet, consectetur...",
+      content2: "Lorem ipsum dolor sit amet...",
+    },
+  ];
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -43,117 +90,39 @@ const Trending4 = () => {
       <p class="title__trending">Trending</p>
       {/* <div class="optional__class d-flex flex-wrap justify-content-between align-items-center"> */}
       <div class="music__inner tending4">
-
-      <Carousel
-        responsive={responsive}
-        //    autoPlay={true}
-        arrows={false}
-      >
-        <div onClick={navigateToExpert} class="card__box music__box optional__box position-relative">
-          <img src={class4} alt="image" />
-          <div class="box__content box__inner d-none d-md-block">
-            <div class="box__top d-flex align-items-center">
-              <span class="me-2">ORIGINAL SOUND</span>
+        <Carousel
+          responsive={responsive}
+          //    autoPlay={true}
+          arrows={false}
+        >
+          {trending.map((trend, index) => (
+            <div
+              onClick={navigateToExpert}
+              class="card__box music__box optional__box"
+            >
+              <img src={trend.picture} alt="image" />
+              <div class="box__content box__inner d-none d-md-block">
+                <div class="box__top d-flex align-items-center">
+                  <span class="me-2">{trend.btn}</span>
+                </div>
+                <h3>
+                  {trend.title}{" "}
+                  <span className="d-md-none d-lg-block">
+                    {trend.titleSpan}
+                  </span>{" "}
+                </h3>
+                <p>{trend.content1}</p>
+              </div>
+              <div class="box__content d-md-none position-absolute trending text-white">
+                <div class="box__top d-flex align-items-center">
+                  <span class="me-2 border-white">{trend.btn}</span>
+                </div>
+                <h3>{trend.title2}</h3>
+                <p> {trend.content2}</p>
+              </div>
             </div>
-            <h3>
-              SONGHEE'S{" "}
-              <span className="d-md-none d-lg-block">MUSIC CLASS</span>{" "}
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur...</p>
-          </div>
-          <div class="box__content d-md-none position-absolute trending text-white">
-            <div class="box__top d-flex align-items-center">
-              <span class="me-2 border-white">ORIGINAL SOUND</span>
-            </div>
-            <h3>SONGHEE</h3>
-            <p> Lorem ipsum dolor sit amet...</p>
-          </div>
-        </div>
-        <div class="card__box music__box optional__box">
-          <img src={class5} alt="image" />
-          <div class="box__content box__inner d-none d-md-block">
-            <div class="box__top d-flex align-items-center">
-              <span class="me-2">ORIGINAL SOUND</span>
-              {/* <span className='d-none d-md-block'>BEAT & HOOK</span> */}
-            </div>
-            <h3>
-              SONGHEE'S{" "}
-              <span className="d-md-none d-lg-block">MUSIC CLASS</span>{" "}
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur...</p>
-          </div>
-          <div class="box__content d-md-none position-absolute trending text-white">
-            <div class="box__top d-flex align-items-center">
-              <span class="me-2 border-white">ORIGINAL SOUND</span>
-            </div>
-            <h3>SONGHEE</h3>
-            <p> Lorem ipsum dolor sit amet...</p>
-          </div>
-        </div>
-        <div class="card__box music__box optional__box">
-          <img src={class6} alt="image" />
-          <div class="box__content box__inner d-none d-md-block">
-            <div class="box__top d-flex align-items-center">
-              <span class="me-2">ORIGINAL SOUND</span>
-              {/* <span className='d-none d-md-block'>BEAT & HOOK</span> */}
-            </div>
-            <h3>
-              SONGHEE'S{" "}
-              <span className="d-md-none d-lg-block">MUSIC CLASS</span>{" "}
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur...</p>
-          </div>
-          <div class="box__content d-md-none position-absolute trending text-white">
-            <div class="box__top d-flex align-items-center">
-              <span class="me-2 border-white">ORIGINAL SOUND</span>
-            </div>
-            <h3>SONGHEE</h3>
-            <p> Lorem ipsum dolor sit amet...</p>
-          </div>
-        </div>
-        <div class="card__box music__box optional__box">
-          <img src={class7} alt="image" />
-          <div class="box__content box__inner d-none d-md-block">
-            <div class="box__top d-flex align-items-center">
-              <span class="me-2">ORIGINAL SOUND</span>
-              {/* <span className='d-none d-md-block'>BEAT & HOOK</span> */}
-            </div>
-            <h3>
-              SONGHEE'S{" "}
-              <span className="d-md-none d-lg-block">MUSIC CLASS</span>{" "}
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur...</p>
-          </div>
-          <div class="box__content d-md-none position-absolute trending text-white">
-            <div class="box__top d-flex align-items-center">
-              <span class="me-2 border-white">ORIGINAL SOUND</span>
-            </div>
-            <h3>SONGHEE</h3>
-            <p> Lorem ipsum dolor sit amet...</p>
-          </div>
-        </div>
-        <div class="card__box music__box optional__box">
-          <img src={class3} alt="image" />
-          <div class="box__content box__inner d-none d-md-block">
-            <div class="box__top d-flex align-items-center">
-              <span class="me-2">ORIGINAL SOUND</span>
-              {/* <span className='d-none d-md-block'>BEAT & HOOK</span> */}
-            </div>
-            <h3>
-              SONGHEE'S{" "}
-              <span className="d-md-none d-lg-block">MUSIC CLASS</span>{" "}
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur...</p>
-          </div>
-          <div class="box__content d-md-none position-absolute trending text-white">
-            <div class="box__top d-flex align-items-center">
-              <span class="me-2 border-white">ORIGINAL SOUND</span>
-            </div>
-            <h3>SONGHEE</h3>
-            <p> Lorem ipsum dolor sit amet...</p>
-          </div>
-        </div>
-      </Carousel>
+          ))}
+        </Carousel>
       </div>
       {/* </div> */}
     </div>

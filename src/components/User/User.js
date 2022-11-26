@@ -1,27 +1,18 @@
-import React, { useRef, useState } from "react";
-
+import React, { useState } from "react";
 import {
   AiFillTwitterCircle,
   AiFillGoogleCircle,
   AiOutlineCamera,
 } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
-import { TiTick } from "react-icons/ti";
-
 import userAc from "../../assets/section/userAccount1.png";
 import image1 from "../../assets/section/userProfile.png";
-import icon1 from "../../assets/icon/user1.svg";
 import icon2 from "../../assets/icon/user2.svg";
 import icon3 from "../../assets/icon/user3.svg";
 import cross from "../../assets/icon/cross.png";
 import tick from "../../assets/icon/tick.png";
 import back from "../../assets/icon/Icon_(1).png";
 import plus from "../../assets/icon/plus.svg";
-
-import social1 from "../../assets/icon/social2.svg";
-import social2 from "../../assets/icon/social3.svg";
-import social3 from "../../assets/icon/social1.svg";
-
 import user1 from "../../assets/section/user5.png";
 import Header from "../Shared/Header";
 
@@ -181,14 +172,13 @@ function User() {
                             src={plus}
                             alt="image"
                           />
-                            <img  className="mx-3"
+                          <img
+                            className="mx-3"
                             onClick={() => setIsEdited(!isEdited)}
                             src={icon3}
                             alt="image"
                           />
                           <img src={icon2} alt="image" />
-
-                        
                         </div>
                       </div>
 
@@ -233,32 +223,3 @@ function User() {
 }
 
 export default User;
-
-{
-  /* <section className="details_saved">
-<div className="users__comment">
-  <h4>Name</h4>
-  <div className=" mb-5 border-bottom border-dark">
-    <input
-      className="py-1 border-0  w-100"
-      type="text"
-      Value={`@${UserName}`}
-    />
-  </div>
-
-  <h4>Bio</h4>
-  <div className=" mb-5 border-bottom border-dark">
-    <textarea
-      className="py-1 border-0  w-100"
-      type="text"
-      value={UserDescription}
-    />
-  </div>
-</div>
-<div className="users__social">
-  <AiFillGoogleCircle size={30} />
-  <BsFacebook size={28} className="mx-3" />
-  <AiFillTwitterCircle size={30} />
-</div>
-</section> */
-}

@@ -1,9 +1,61 @@
 import React from "react";
 
 const ExpartEaq = () => {
+  const faqs = [
+    {
+      ques: "     ABOUT ME",
+      ans: "  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+    },
+    {
+      ques: "    SUBMISSION GIODLINES",
+      ans: "  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+    },
+    {
+      ques: "     PAYMENT",
+      ans: "  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+    },
+    {
+      ques: "   SERVICE POLICY",
+      ans: "  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+    },
+  ];
   return (
     <div className="my-5">
       <div class="accordion" id="accordionExample">
+        {/* {
+  faqs.map((faq,index)=> <div key={index} class="accordion-item">
+  <h2 class="accordion-header" id={index}>
+    <button
+      class="accordion-button"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target={index + '*'}
+      aria-expanded="true"
+      aria-controls={index + '*'}
+    >
+      ABOUT ME
+    </button>
+  </h2>
+  <div
+    id={index + '*'}
+    class="accordion-collapse collapse show"
+    aria-labelledby={index}
+    data-bs-parent="#accordionExample"
+  >
+    <div class="accordion-body">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod. Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor
+      sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem
+      ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod.
+    </div>
+  </div>
+</div>)
+}  */}
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button

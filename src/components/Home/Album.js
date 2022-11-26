@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import class1 from "../../assets/section/talent_card_1.png";
 import class2 from "../../assets/section/userAccount2.png";
 import class3 from "../../assets/section/userAccount3.png";
@@ -110,7 +108,6 @@ const Album = ({ selectedMenu }) => {
                 backgroundImage: `url(${album.picture})`,
               }}
             >
-              {/* <img src={album.picture} className="card-img img-fluid" alt="..." /> */}
               <div className="">
                 <button
                   type="button"
@@ -136,28 +133,13 @@ const Album = ({ selectedMenu }) => {
         ))}
       </div>
 
-
-
       <div className="row mt-0 ">
         {selectedMenu === "ALL" && <b className="tranding">Tranding</b>}
-      
-
-<Trending1/>
-    
-     
-
-
-
-     
-
-<Trending2/>
-
-      
-
-<Trending3/>
-<Trending4/>
-
-    </div>
+        <Trending1 />
+        <Trending2 />
+        <Trending3 />
+        <Trending4 />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import google from "../../assets/icon/google.svg";
-
 import { AiOutlineGoogle } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import Header from "./Header";
